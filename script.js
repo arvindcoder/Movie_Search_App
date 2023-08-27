@@ -15,7 +15,9 @@ let getMovie = ()=>{
         result.innerHTML = `<h3 class="msg">Enter A Movie Name...</h3>`
     }
     else{
-        fetch(url)
+        fetch(url, 
+            // `{referrerPolicy: "unsafe_url"}`
+            )
         .then((res)=>res.json())
         .then((data) =>{
            // IF Movie exist in database

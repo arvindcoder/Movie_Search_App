@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <title>Movie Guide App</title>
     <!-- Google Font -->
     <link
@@ -16,7 +17,7 @@
       <div class="search-container">
         <input
           type="text"
-          placeholder="Enter movie name heree..."
+          placeholder="Enter movie name here..."
           id="movie-name"
           value="dark knight"
         />
@@ -24,7 +25,6 @@
       </div>
       <div id="result"></div>
     </div>
-    <script src="key.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
